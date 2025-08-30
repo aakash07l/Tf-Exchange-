@@ -1,38 +1,19 @@
-#rate-box {
-    max-width: 550px;
-    margin: 30px auto;
-    background: #f0f9ff;
-    border: 2px solid #4a90e2;
-    border-radius: 15px;
-    padding: 25px 35px;
-    box-shadow: 0 8px 18px rgba(74, 144, 226, 0.3);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #1c3c72;
-}
-
-#rate-box h2 {
-    font-size: 1.6rem;
-    margin-bottom: 18px;
-    text-align: center;
-}
-
-#rate-box ul {
-    list-style: none;
-    padding: 0;
-    font-size: 1.25rem;
-    line-height: 2.2;
+body {
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  color: #222;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 #rate-box ul li {
-    padding-left: 24px;
-    position: relative;
+  position: relative;
+  padding-left: 1.5em;
 }
 
 #rate-box ul li::before {
-    content: '•';
-    position: absolute;
-    left: 0;
-    color: #4a90e2;
-    font-size: 1.6rem;
-    line-height: 1;
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: #0d6efd; /* Bootstrap primary */
+  font-size: 1.4em;
+  line-height: 1;
 }
