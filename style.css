@@ -1,76 +1,38 @@
-#price-section {
-    background: white;
-    margin: 40px auto;
-    max-width: 650px;
-    padding: 30px 40px;
-    border-radius: 16px;
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+#rate-box {
+    max-width: 550px;
+    margin: 30px auto;
+    background: #f0f9ff;
+    border: 2px solid #4a90e2;
+    border-radius: 15px;
+    padding: 25px 35px;
+    box-shadow: 0 8px 18px rgba(74, 144, 226, 0.3);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #2c3e50;
+    color: #1c3c72;
 }
 
-#price-section h2, #price-section h3 {
+#rate-box h2 {
+    font-size: 1.6rem;
+    margin-bottom: 18px;
     text-align: center;
-    margin-bottom: 20px;
-    letter-spacing: 1.5px;
 }
 
-#rate-table, #cash-rate-table {
-    width: 100%;
-    border-collapse: separate;
-    border-spacing: 0 12px;
-    font-size: 1.2rem;
-    color: #34495e;
-}
-
-#rate-table tbody tr, #cash-rate-table tbody tr {
-    background: #f8faff;
-    box-shadow: 0 4px 8px rgba(52, 73, 94, 0.1);
-    transition: background 0.25s ease;
-    border-radius: 10px;
-}
-
-#rate-table tbody tr:hover, #cash-rate-table tbody tr:hover {
-    background: #dceeff;
-}
-
-#rate-table td:first-child, #cash-rate-table td:first-child {
-    font-weight: bold;
-    padding-left: 20px;
-    border-radius: 10px 0 0 10px;
-}
-
-#rate-table td:last-child, #cash-rate-table td:last-child {
-    text-align: right;
-    padding-right: 20px;
-    border-radius: 0 10px 10px 0;
-    color: #27ae60;
-    font-weight: 600;
-}
-
-#price-section p, #price-section ul {
-    max-width: 650px;
-    margin: 20px auto;
-    line-height: 1.5;
-}
-
-#price-section ul {
+#rate-box ul {
     list-style: none;
     padding: 0;
-    color: #16a085;
-    font-weight: 600;
+    font-size: 1.25rem;
+    line-height: 2.2;
 }
 
-#price-section ul li {
-    margin-bottom: 8px;
+#rate-box ul li {
+    padding-left: 24px;
+    position: relative;
 }
 
-#price-section a {
-    color: #2980b9;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-#price-section a:hover {
-    text-decoration: underline;
+#rate-box ul li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: #4a90e2;
+    font-size: 1.6rem;
+    line-height: 1;
 }
