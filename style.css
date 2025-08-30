@@ -1,46 +1,32 @@
-body {
-    font-family: Arial, sans-serif;
-    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-    margin: 0;
-    padding: 0 20px;
-    color: #333;
-}
-
-header {
-    background-color: #2c3e50;
-    color: white;
-    padding: 15px 0;
-    text-align: center;
-    font-size: 2rem;
-    letter-spacing: 2px;
-}
-
-#price-section {
-    background: white;
-    margin: 20px auto;
+#rate-table, #cash-rate-table {
+    width: 100%;
     max-width: 600px;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 8px 16px rgba(44, 62, 80, 0.2);
+    margin: 10px auto 20px;
+    border-collapse: collapse;
+    font-size: 1.1rem;
 }
 
-#price-display {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #27ae60;
-    text-align: center;
+#rate-table td, #rate-table th,
+#cash-rate-table td, #cash-rate-table th {
+    border: 1px solid #ddd;
+    padding: 8px 12px;
 }
 
-#offer-section {
-    max-width: 600px;
-    margin: 30px auto;
-    background: #e74c3c;
-    color: white;
-    padding: 25px;
-    border-radius: 15px;
-    font-size: 1.3rem;
+#rate-table tr:nth-child(even), #cash-rate-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+#rate-table tr:hover, #cash-rate-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+#rate-table td:first-child, #cash-rate-table td:first-child {
     font-weight: 600;
-    text-align: center;
-    box-shadow: 0 10px 20px rgba(231, 76, 60, 0.6);
-    letter-spacing: 1px;
+}
+
+#rate-table, #cash-rate-table {
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    background: white;
 }
