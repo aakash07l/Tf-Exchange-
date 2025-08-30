@@ -1,32 +1,76 @@
+#price-section {
+    background: white;
+    margin: 40px auto;
+    max-width: 650px;
+    padding: 30px 40px;
+    border-radius: 16px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #2c3e50;
+}
+
+#price-section h2, #price-section h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    letter-spacing: 1.5px;
+}
+
 #rate-table, #cash-rate-table {
     width: 100%;
-    max-width: 600px;
-    margin: 10px auto 20px;
-    border-collapse: collapse;
-    font-size: 1.1rem;
+    border-collapse: separate;
+    border-spacing: 0 12px;
+    font-size: 1.2rem;
+    color: #34495e;
 }
 
-#rate-table td, #rate-table th,
-#cash-rate-table td, #cash-rate-table th {
-    border: 1px solid #ddd;
-    padding: 8px 12px;
+#rate-table tbody tr, #cash-rate-table tbody tr {
+    background: #f8faff;
+    box-shadow: 0 4px 8px rgba(52, 73, 94, 0.1);
+    transition: background 0.25s ease;
+    border-radius: 10px;
 }
 
-#rate-table tr:nth-child(even), #cash-rate-table tr:nth-child(even) {
-    background-color: #f9f9f9;
-}
-
-#rate-table tr:hover, #cash-rate-table tr:hover {
-    background-color: #f1f1f1;
+#rate-table tbody tr:hover, #cash-rate-table tbody tr:hover {
+    background: #dceeff;
 }
 
 #rate-table td:first-child, #cash-rate-table td:first-child {
+    font-weight: bold;
+    padding-left: 20px;
+    border-radius: 10px 0 0 10px;
+}
+
+#rate-table td:last-child, #cash-rate-table td:last-child {
+    text-align: right;
+    padding-right: 20px;
+    border-radius: 0 10px 10px 0;
+    color: #27ae60;
     font-weight: 600;
 }
 
-#rate-table, #cash-rate-table {
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    border-radius: 8px;
-    overflow: hidden;
-    background: white;
+#price-section p, #price-section ul {
+    max-width: 650px;
+    margin: 20px auto;
+    line-height: 1.5;
+}
+
+#price-section ul {
+    list-style: none;
+    padding: 0;
+    color: #16a085;
+    font-weight: 600;
+}
+
+#price-section ul li {
+    margin-bottom: 8px;
+}
+
+#price-section a {
+    color: #2980b9;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#price-section a:hover {
+    text-decoration: underline;
 }
